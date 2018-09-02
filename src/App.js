@@ -13,6 +13,14 @@ class App extends Component {
     return (
       <div className="App">
         {!pathname.includes('editor') ? <Header /> : ""}
+        <SignInWith />
+          <Switch>
+            <Route exact path="/" component={Feed} />
+            <Route exact path="/profile/:id" component={Profile} />
+            <Route exact path="/aticleview/:id" component={ArticleView} />
+            <Route exact path="/editor" component={Editor} />
+            <Route exact path="**" component={Feed} />
+          </Switch>
       </div>
     );
   }
