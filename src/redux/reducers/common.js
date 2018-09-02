@@ -1,5 +1,5 @@
 const defaultState = {
-    appName:'',
+    appName: '',
     modalMode:false
 }
 
@@ -7,10 +7,10 @@ export default (state = defaultState, action)=>{
     switch (action.type) {
         case 'TOOGLE_MODEL':
             return{
-                ...defaultState,
+                ...state,
                 modalMode: action.modalMode
             }
         default:
-            state
+           return state
     }
 };

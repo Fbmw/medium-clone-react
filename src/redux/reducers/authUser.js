@@ -23,6 +23,6 @@ export default (state = initialState, action) => {
                 article: action.profile
             }
         default:
-            state
+           return state
     }
 }

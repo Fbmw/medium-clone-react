@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-export default function (Conmponent) {
+
+export default  function (Conmponent) {
     class Authenticate extends Component {
         
         componentWillMount() {
