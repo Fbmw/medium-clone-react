@@ -13,13 +13,13 @@ class App extends Component {
     const pathname = window.location.pathname;
     return (
       <div className="App">
-        { !pathname.includes('editor') ? <Header /> : "" }
+        {/* { !pathname.includes('editor') ? <Header /> : "" } */}
         <SignInWith />
           <Switch>
             <Route exact path="/" component={Feed} />
             <Route exact path="/profile/:id" component={Profile} />
             <Route exact path="/aticleview/:id" component={ArticleView} />
-            <Route exact path="/editor" component={requireAuthentication(Editor)} />
+            {/* <Route exact path="/editor" component={requireAuthentication(Editor)} /> */}
             <Route exact path="**" component={Feed} />
           </Switch>
       </div>
